@@ -15,6 +15,11 @@ connectDB();
 
 app.use(express.json());
 
+
+app.get('/', (req, res) => {
+  res.send('home page');
+});
+
 // for generating token 
 app.use(tokenRouter)
 
